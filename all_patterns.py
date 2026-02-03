@@ -103,7 +103,6 @@ def p8(h):
 #   *****
 #  *******
 # *********
-# *********
 #  *******
 #   *****
 #    ***
@@ -117,7 +116,7 @@ def p9(l):
                 print('*',end='')
             print()
         else:
-            p=m-l
+            p=m-l+1
             for n in range(p):
                 print(' ',end='')
             for o in range(2*(l-p)-1):
