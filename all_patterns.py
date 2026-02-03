@@ -96,4 +96,32 @@ def p8(h):
         for k in range(2*(h-i)-1):
             print('*',end='')
         print()
-p8(5)
+
+# p9
+#     *    
+#    ***
+#   *****
+#  *******
+# *********
+# *********
+#  *******
+#   *****
+#    ***
+#     *       
+def p9(l):
+    for m in range(2*l):
+        if (m<l):
+            for n in range(l-m-1):
+                print(' ',end='')
+            for o in range((2*m)+1):
+                print('*',end='')
+            print()
+        else:
+            p=m-l
+            for n in range(p):
+                print(' ',end='')
+            for o in range(2*(l-p)-1):
+                print('*',end='')
+            print()
+
+            
