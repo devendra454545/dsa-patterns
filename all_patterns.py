@@ -108,19 +108,40 @@ def p8(h):
 #    ***
 #     *       
 def p9(l):
-    for m in range(2*l):
-        if (m<l):
-            for n in range(l-m-1):
-                print(' ',end='')
-            for o in range((2*m)+1):
-                print('*',end='')
+    for i in range(2*l):
+        if i < l:
+            for j in range(l - i - 1):
+                print(' ', end='')
+            for k in range((2 * i) + 1):
+                print('*', end='')
             print()
         else:
-            p=m-l+1
-            for n in range(p):
-                print(' ',end='')
-            for o in range(2*(l-p)-1):
-                print('*',end='')
+            p = i - l + 1
+            for j in range(p):
+                print(' ', end='')
+            for k in range(2 * (l - p) - 1):
+                print('*', end='')
             print()
 
+# p10
+# *
+# **
+# ***
+# ****
+# *****
+# ****
+# ***
+# **
+# *
+def p10(m):
+    for i in range(2*m - 1):
+        if i < m:
+            for j in range(i + 1):
+                print('*', end='')
+        else:
+            for j in range(2*m - i - 1):
+                print('*', end='')
+        print()
+
+p10(5)
             
