@@ -143,5 +143,5 @@ def p10(m):
                 print('*', end='')
         print()
 
-p10(5)
+
             
