@@ -237,3 +237,16 @@ def p15a(r):
             print(chr(ch),end='')
         print()
  
+# p16
+# A 
+# BB
+# CCC
+# DDDD
+# EEEEE
+def p16(s):
+    ch = 'A'
+    for i in range(s):
+        for j in range(i+1):
+            print(ch,end='')
+        ch = chr(ord(ch)+1)
+        print()
