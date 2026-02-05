@@ -158,3 +158,81 @@ def p11(n):
                 print('0',end='')
         print()
 
+# p12
+# 1      1
+# 12    21
+# 123  321
+# 12344321
+def p12(o):
+    for i in range (1,o+1):
+        for j in range(1,i+1):
+            print(j,end='')
+        for k in range(2*(o-i)):
+            print('-',end='')
+        for l in range(i,0,-1):
+            print(l,end='')
+        print()
+
+# p13 (added spaces just for clarity)
+# 1                 
+# 2  3
+# 4  5  6
+# 7  8  9 10
+# 11 12 13 14 15
+def p13(p):
+    start = 1
+    for i in range(p):
+        for j in range(i+1):
+            print(start,end='')
+            start = start+1
+        print()
+
+# p14
+# A
+# AB
+# ABC
+# ABCD
+# ABCDE
+def p14(q):
+    ch = 'A'
+    for i in range(q):
+        for j in range(i+1):
+            if j==0:
+                ch = 'A'
+                print(ch,end='')
+            else:
+                ch = chr(ord(ch)+1)
+                print(ch,end='')
+        print()
+
+# Alternate method of p14() is p14a()
+def p14a(q):
+    for i in range(q):
+        for ch in range(ord('A'),ord('A')+i+1):
+            print(chr(ch),end='')
+        print()
+
+# p15
+# ABCDE
+# ABCD
+# ABC
+# AB 
+# A
+def p15(r):
+    ch='A'
+    for i in range(r):
+        for j in range(r,i,-1):
+            if(j==r):
+                ch='A'
+                print(ch,end='')
+            else:
+                ch = chr(ord(ch)+1)
+                print(ch,end='')
+        print()
+
+# Alternate method of p15() is p15a()
+def p15a(r):
+    for i in range(r):
+        for ch in range(ord('A'),ord('A')+r-i):
+            print(chr(ch),end='')
+        print()
