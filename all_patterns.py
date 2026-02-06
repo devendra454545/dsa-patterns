@@ -265,3 +265,19 @@ def p17(t):
         for ch2 in range(ord('A')+i-1,ord('A')-1,-1):
             print(chr(ch2),end='')
         print()
+
+# p18
+# E 
+# DE 
+# CDE 
+# BCDE 
+# ABCDE
+
+def p18(u):
+    for i in range(u):
+        start = ord('A')+u-1-i
+        for ch in range(start,ord('A')+u):
+            print(chr(ch),end='')
+        print()    
+        
+p18(5)
